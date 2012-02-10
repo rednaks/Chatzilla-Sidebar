@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+
+
+<overlay id="chatzillaSideBar-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+
+ <vbox id="sidebar-box" class="chromeclass-extrachrome" aiosInit="true" aiosLastPanel="viewAddonsSidebar" width="617" src="chrome://chatzilla/content/chatzilla.xul" sidebarcommand="viewChatzillaSidebar" hidden="false">
+	<browser id="sidebar" flex="1" autoscroll="false" src="chrome://chatzilla/content/chatzilla.xul"/>
+ </vbox>
+</overlay>

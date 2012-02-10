@@ -1,0 +1,3 @@
+content   chatzillaSidebar                content/
+
+overlay chrome://browser/content/browser.xul  chrome://chatzillaSidebar/content/chatzillaSidebarOverlay.xul
