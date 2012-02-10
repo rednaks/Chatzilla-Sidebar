@@ -7,7 +7,16 @@
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 
- <vbox id="sidebar-box" class="chromeclass-extrachrome" aiosInit="true" aiosLastPanel="viewAddonsSidebar" width="617" src="chrome://chatzilla/content/chatzilla.xul" sidebarcommand="viewChatzillaSidebar" hidden="false">
-	<browser id="sidebar" flex="1" autoscroll="false" src="chrome://chatzilla/content/chatzilla.xul"/>
- </vbox>
+ <menubar id="main-menubar">
+ 	<menu id="chatzilla-menu" label="ChatZilla-sidebar">
+		<menupopup id="chatzilla-popupmenu" >
+			<menuitem id="cz_open_sidebar" oncommand="toggleSidebar('viewChatzillaSidebar');" label="Open ChatZilla Sidebar"/>
+			<menuitem id="cz_side_about" oncommand="alert('Mozilla Tunisia Powaaa !');" label="About"/>
+		</menupopup>
+	</menu>
+ </menubar>
+
+ <broadcasterset id="mainBroadcasterSet">
+	<broadcaster id="viewChatzillaSidebar" label="ChatZilla Sidebar" autoCheck="false" group="sidebar" sidebarurl="chrome://chatzilla/content/chatzilla.xul" sidebartitle="Chatzilla Sidebar !" />
+ </broadcasterset>
 </overlay>
